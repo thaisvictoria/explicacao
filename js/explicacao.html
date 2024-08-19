@@ -1,0 +1,192 @@
+<!-- 'doctype' avisa que tipo de documento é -->
+<!DOCTYPE html>
+
+<!-- 'html' envolve tudo -->
+<html lang="pt-br">
+
+<!-- guarda infos tipo titulo -->
+
+<head>
+
+  <!-- informações extras -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- nome que aparece na aba do navegador -->
+  <title>Document</title>
+
+  <!-- linkar o arquivo css, onde  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- o que aparece na tela -->
+
+<body>
+
+  <!-- 'header' é como a cabeça da página, o topo. Normalmente, guarda o logo, o menu de navegação ou o título da página. -->
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+
+  <!-- 'main' é o conteúdo principal da página. Dentro do main, você coloca o que é mais importante, como textos, imagens, vídeos. -->
+  <main>
+    <h2>Bem-vindo!</h2>
+    <p>Aqui você encontra vários conteúdos interessantes.</p>
+  </main>
+
+
+  <!-- 'div' é como uma grande caixa. Geralmente, é usado para agrupar grandes pedaços de conteúdo. -->
+  <div>
+
+    <!-- maior titulo -->
+    <h1>Esse é o titulo maior</h1>
+
+    <!-- menor titulo -->
+    <h6>Esse é o titulo menor</h6>
+
+    <!-- paragrafo -->
+    <p>
+      Paragrafo de um texto. Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Perspiciatis voluptatem nobis cupiditate recusandae
+      impedit sapiente temporibus autem, obcaecati labore. Commodi voluptatem
+      quisquam earum molestias natus expedita doloremque distinctio magnam
+      temporibus.
+    </p>
+
+    <!-- 'span' destaca apenas uma parte do texto -->
+    <p>
+      Este é um <span>texto destacado</span> no meio do parágrafo com 'span'
+    </p>
+  </div>
+
+  <div class="link">
+
+    <!-- faz links para outras páginas ou seções -->
+    <a href="http://google.com.br">LINK</a>
+  </div>
+
+
+  <div class="imagens">
+    <!-- mostra imagens -->
+    <img src="https://flamboyant.com.br/blog/wp-content/uploads/2020/02/5C3EFF19-E138-4F26-832F-E3A19D67D00B.jpeg"
+      alt="imagem gatinho" />
+  </div>
+
+  <div class="listas">
+    <p>Listas não ordenadas:</p>
+
+    <!-- faz lista NÃO ordenada, com bolinhas -->
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <p>Listas ordenadas</p>
+
+    <!-- faz lista ordenada, numerada-->
+    <ol>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+  </div>
+
+  <div class="tabelas">
+
+    <!-- 'table' cria a tabela -->
+    <table border="1px">
+
+      <!-- 'tr' cria a linha-->
+      <tr>
+
+        <!-- 'td' cria as celulas(colunas) dentro das linhas -->
+        <td>Nome</td>
+        <td>Idade</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Pedro</td>
+        <td>12</td>
+      </tr>
+    </table>
+  </div><br><br>
+
+  <!-- 'form' é como uma "caixa" que guarda tudo o que o usuário vai preencher e enviar (um formulário) -->
+  <!-- O atributo method="post" define como os dados serão enviados (neste caso, via post). -->
+  <form action="/enviar" method="post">
+
+    <!--'label' é o texto que descreve o que o user precisa colocar no input -->
+    <!-- O atributo for="nome" conecta o label ao campo de entrada (input) com o mesmo id="nome". Isso facilita para os usuários clicarem no texto e o campo já ficar selecionado. -->
+    <label for="nome">Nome:</label>
+
+    <!-- 'input' é o campo onde o usuário digita algo, como nome, email, ou escolhe opções. -->
+    <!-- O atributo id e name ligam o input aos dados que serão enviados. -->
+    <!-- 'id' é o unico -->
+    <input type="text" id="nome" name="nome"><br><br>
+
+    <!-- O button cria o botão de envio. Quando clicado, ele manda os dados preenchidos no form. -->
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- 'article' é usado para um conteúdo específico que pode fazer sentido por si só, como uma postagem de blog, um artigo de jornal ou uma notícia. Aqui o 'article' é uma noricia especifica que pode ser lida independente-->
+  <article>
+    <h3>Últimas Notícias</h3>
+    <p>Hoje lançamos um novo produto incrível!</p>
+  </article>
+
+
+  <!-- explicação no css -->
+  <div class="explicacao-no-css">
+    <section class="fonte-cor">
+      <!-- explicação no css sobre color, fonte, decoração do texto, tamanho, alinha mento e estilo -->
+      <p class="class-exemplo">Texto azul, sublinhado, centralizado, tamanho 20px, fonte Arial.</p>
+      <p id="id-exemplo">Texto vermelho</p>
+    </section>
+  </div>
+
+
+  <!-- explicação no css sobre margin, padding e border -->
+  <div class="boxmodel">
+    <section class="box-model">elemento com margem, padding e borda</section>
+  </div>
+
+  <!-- expicação no css sobre position, display, flex, grid -->
+  <div class="posicionamento">
+    <p>Posição absoluta (50px de cima e esquerda).</p>
+    <section class="flex-container">
+      <div>item flex 1</div>
+      <div>item flex 2</div>
+    </section>
+    <section class="grid-container">
+      <div>item grid 1</div>
+      <div>item grid 2</div>
+    </section>
+  </div>
+  </div>
+
+
+
+  <!-- 'section' é uma seção do conteúdo. Você usa section para dividir o conteúdo em partes, é usado para um conteúdo específico que pode fazer sentido por si só, como uma postagem de blog, um artigo de jornal ou uma notícia. -->
+  <section>
+    <h3>Sobre Nós</h3>
+    <p>Somos uma empresa dedicada à tecnologia.</p>
+  </section>
+
+  <!-- 'footer' é o rodapé, a parte de baixo da página. Geralmente, tem informações como direitos autorais, links importantes, ou contatos. Aqui tem uma mensagem de direitos autorais -->
+  <footer>
+    <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>

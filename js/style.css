@@ -1,0 +1,57 @@
+/* para 'class' é colocando um ponto */
+.class-exemplo {
+    color: blue;
+    /* muda a cor do texto*/
+    font-size: 20px;
+    /* tamanho da fonte */
+    font-family: Arial, Helvetica, sans-serif;
+    /* estilo da letra */
+    text-align: center;
+    /* alinhamento do texto, por exemplo: centro */
+    text-decoration: underline;
+    /* adiciona sublinhado, riscado, etc */
+}
+
+/* quando é 'id' se coloca um hastag */
+#id-exemplo {
+    color: red;
+    /* muda a cor do texto*/
+}
+
+
+body {
+    background-color: azure;
+    /* muda a cor de fundo */
+    background-image: url('imagem.jpg');
+    /* coloca imagem de fundo */
+}
+
+.box-model {
+    margin: 20px;
+    /* cria espaço  externo, fora da borda */
+    padding: 10px;
+    /* cria espaço interno, dentro da borda */
+    border: 2px solid black;
+    /* a borda ao redor do elemento */
+}
+
+div,
+section,
+footer {
+    margin-top: 200px;
+}
+
+.posicionamento {
+    position: absolute;
+    top: 50px;
+    left: 50px
+}
+
+.flex-container {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
